@@ -1,0 +1,12 @@
+.logo-h{
+    background-color: black;
+    height: 100px;
+    width: 1420px;
+}
+.logo{
+    color: white;
+    font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
+    font-size: 100px;
+    position: relative;
+    left: 400px;
+}
