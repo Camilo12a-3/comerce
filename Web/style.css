@@ -56,3 +56,21 @@ ul, ol {
     right:-140px;
     top:0px;
 }
+.c1{
+    border: 2px solid rebeccapurple;
+    position: relative;
+    left: 100px; 
+    width: 200px;
+    height: 50px;
+    bottom: -1px;
+    text-align: center;
+    font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
+    background-color: black;
+}
+.c2{
+    color: white;
+    position: relative;
+    bottom: 18px;
+    width: 100px;
+    height: 50px;
+}
