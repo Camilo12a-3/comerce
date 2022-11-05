@@ -10,17 +10,15 @@ require_once "config/config.php";
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Carrito de Compras</title>
-    <!-- Favicon-->
+
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap icons-->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" /> -->
-    <!-- Core theme CSS (includes Bootstrap)-->
+
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/estilos.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Navigation-->
+  
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -74,12 +72,9 @@ require_once "config/config.php";
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Camilo Morales</p>
         </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="https://www.paypal.com/sdk/js?client-id=<?php echo CLIENT_ID; ?>&locale=<?php echo LOCALE; ?>"></script>
     <script src="assets/js/scripts.js"></script>
@@ -122,7 +117,7 @@ require_once "config/config.php";
                                     label: 'pay'
                                 },
                                 createOrder: function(data, actions) {
-                                    // This function sets up the details of the transaction, including the amount and line item details.
+                                   
                                     return actions.order.create({
                                         purchase_units: [{
                                             amount: {
@@ -132,9 +127,9 @@ require_once "config/config.php";
                                     });
                                 },
                                 onApprove: function(data, actions) {
-                                    // This function captures the funds from the transaction.
+                              
                                     return actions.order.capture().then(function(details) {
-                                        // This function shows a transaction success message to your buyer.
+                                      
                                         alert('Transaction completed by ' + details.payer.name.given_name);
                                     });
                                 }
