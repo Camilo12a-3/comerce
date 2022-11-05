@@ -76,7 +76,7 @@ require_once "config/config.php";
         </div>
     </footer>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="https://www.paypal.com/sdk/js?client-id=<?php echo CLIENT_ID; ?>&locale=<?php echo LOCALE; ?>"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=hfv9ihdfg9hf09s8hfjs9<?php echo CLIENT_ID; ?>&locale=<?php echo LOCALE; ?>"></script>
     <script src="assets/js/scripts.js"></script>
     <script>
         mostrarCarrito();

@@ -26,7 +26,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                    <a href="#" class="nav-link text-info" category="all" href="admin/">Agregar</a>
+                    <a class="nav-link text-info" href="admin/index.php">Agregar</a>
                         <a href="#" class="nav-link text-info" category="all">Todo</a>
                         <?php
                         $query = mysqli_query($conexion, "SELECT * FROM categorias");
